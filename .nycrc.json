@@ -1,0 +1,16 @@
+{
+  "check-coverage": true,
+  "lines": 95,
+  "statements": 95,
+  "functions": 95,
+  "branches": 95,
+  "reporter": [
+    "html",
+    "text",
+    "text-summary"
+  ],
+  "cache": false,
+  "all": true,
+  "exclude": "coverage",
+  "report-dir": "./coverage"
+}

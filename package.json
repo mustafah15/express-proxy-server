@@ -1,0 +1,43 @@
+{
+  "name": "express-proxy-server",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "mustafah15 <mustafa.hussain93@gmail.com>",
+  "description": "easy way to build proxy server for express routes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mustafah15/express-proxy-server.git"
+  },
+  "engine": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "contributors": [
+    {
+      "name": "Mustafa Hussain <mustafah15>",
+      "email": "mustafa.hussain93@gmail.com"
+    }
+  ],
+  "main": "./index",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/ --exit --recursive --timeout=60000",
+    "coverage": "./node_modules/.bin/nyc ./node_modules/.bin/mocha ./test/ --recursive --timeout=60000 --exit",
+    "lint": "./node_modules/.bin/eslint ./src/ ./test/ ./index.js",
+    "docker": "docker-compose build --no-cache && docker-compose run node",
+    "depcheck": "./node_modules/.bin/npm-check"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-guardians-labs": "^1.0.0",
+    "express": "^4.16.3",
+    "mocha": "^6.2.2",
+    "npm-check": "^5.9.0",
+    "nock": "^11.7.0",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
