@@ -1,9 +1,9 @@
 {
   "name": "express-proxy-server",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "mustafah15 <mustafa.hussain93@gmail.com>",
-  "description": "easy way to build proxy server for express routes",
+  "description": "easy way to build proxy middleware for express",
   "repository": {
     "type": "git",
     "url": "https://github.com/mustafah15/express-proxy-server.git"
@@ -12,6 +12,12 @@
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
+  "keywords": [
+    "express-http-server",
+    "express",
+    "proxy",
+    "middleware"
+  ],
   "contributors": [
     {
       "name": "Mustafa Hussain <mustafah15>",
